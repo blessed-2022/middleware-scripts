@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Author: Dominique
+#Author: Annick A.
 #Date: March 1st, 2022
 
 ##This script is to automate the installing Jenkins on a CentOS 7 system using the official Jenkins repository.
@@ -32,8 +32,9 @@ echo -e "\n Issue with installing Java\n "
 exit 99
 fi
 
-sleep 5
 echo -e "\nNow we need to enable the Jenkins repository...\n "
+
+sleep 5
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 
